@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!---Bootstap Links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="Main_style.css">
+</head>
+<script src="https://kit.fontawesome.com/ede971585b.js" crossorigin="anonymous"></script>
+<style>
+  html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    }
+</style>
+  <body>
+    <header class="py-2 border-bottom border-success border-opacity-10 ">
+      <div class="container d-flex d-md-blockflex-wrap justify-content-center">
+        <a href="#" class="d-none d-md-block d-flex align-items-center mt-2 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+          <i class="bi bi-telephone-forward-fill text-dark mx-2"> 09983336584</i>
+            <div class="vr text-dark"></div>
+            <i class="bi bi-envelope-fill text-dark mx-2"> 428hitechgroupinc@gmail.com</strong> </i>
+            <div class="vr text-dark"></div>
+            <i class="bi bi-calendar-check-fill text-dark mx-2">  Monday - Sunday 9.00 - 18.00</strong></i>
+
+        </a>
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-tansparent border-white text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <strong>REQUEST AN APPOINTMENT</strong>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal modal-signin position-static d-block  py-5" tabindex="-1" role="dialog" id="modalSignin">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header p-5 pb-4 border-bottom-0">
+          <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+          <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
+          <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            
+          </button>
+         </div>
+  
+        <div class="modal-body p-5 pt-0">
+          <form class="row g-3">
+            <div class="col-md-12">
+              <div class="form-floating mb-3">
+                <input type="name" class="form-control" id="floatingInput" placeholder="Name">
+                <label for="floatingInput">NAME</label>
+              </div>
+              
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input type="email4" class="form-control" id="floatingemail4" placeholder="Email">
+                <label for="floatingemail4">EMAIL</label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-floating">
+              <input type="tel" id="phone" name="phone" class="form-control" id="floatingphone" placeholder="Phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" >
+              <label for="floatinginput" >PHONE</label>
+            </div>
+            </div>
+            <div class="col-6">
+              <div class="form-floating">
+                <input type="text" id="datepicker" name="date" class="form-control" id="floatingdate" placeholder="DATE" >
+                <label for="floatinginput" >DATE</label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class=" form-floating">
+                <input type="time" id="floatingtime" class="form-control" placeholder="TIME" />
+                <label for="floatingtime">TIME</label>
+              </div>
+             </div>
+             <div class="col-12">
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Comments</label>
+              </div>
+             </div>
+             <div class="file-upload-wrapper">
+              <input type="file" id="input-file-now-custom-2" class="file-upload"
+             data-height="500" />
+           </div>
+           
+            <div class="col-12">
+              <button type="submit" class="btn btn-info">Sign in</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </header>
+      <nav class="navbar navbar-expand-lg py-2 bg-light">
+        <div class="container d-flex flex-wrap text-success">
+            <a href="/" class="navbar-brand d-flex align-items-center mb-1 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+                <img src="/Img/plogo.png" alt="Logo" width="50" height="60" class="d-inline-block align-text-top mx-2">
+                
+                <span class="fs-4 mx-2 text-dark fw-bold " >428-HI-TECH</Strong></span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mt-2"><a href="#" class="nav-link link-info px-2  text-dark" aria-current="page">HOME</a></strong></li>
+            
+            <li class="nav-item mt-2"><a href="/Aboutus.html" class="nav-link link-info px-2 text-dark">ABOUT US</a></Strong></li>
+            
+            <li class="nav-item mt-2"><a href="/Projects.html" class="nav-link link-info px-2 text-dark">PROJECTS</a></Strong></li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mt-2 link-info px-2 text-info"  href="/Services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                SERVICES</strong>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/Services.html">BUILD</a></li>
+                <li><a class="dropdown-item" href="/Consultation.html">CONSULTATION</a></li>
+                <li><a class="dropdown-item" href="/Design.html">DESIGN</a></li>
+              </ul>
+            </li>
+            
+            <li class="nav-item mt-2"><a href="/Contact Us.html" class="nav-link link-info px-2 text-dark">CONTACT US</a></Strong></li>
+
+          </ul>
+        </div>
+      </div>
+      </nav>
+
+      <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/Img/Breadcrumbs-3.jpg'); text-align:center">
+        <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+          <h3 class="fw-bolder text-white"><span class="text-info UPPERCASED display-6 text-sm-center text-center">Construction Consultancy</span>
+            Services Philippines</h3>
+          <ol>
+            <li><a href="Main-index.html" class="text-decoration-none">Home</a></li>
+            <li class="text-info">Service</li>
+          </ol>
+        </div>
+      </div>
+
+       <div class="bg-light">
+        <div class="container pb-5 mb-5" >
+         <div class="row align-items-center">
+           <!-- col -->
+           <div class="col-lg-6 col-md-12 col-12"  data-aos="fade-right">
+             <!-- content -->
+            <div class="pe-lg-6 ps-lg-6" >
+              
+              <h2 class="display-5 mt-4 mb-3 fw-bold" >Construction Consultancy</h2>
+             
+              <div class="mt-6">
+                 <!-- icon with para -->
+                <div class="d-flex mb-4">
+                  
+                  <div class="ms-3">
+                     <!-- content -->
+                    
+                    <p class="mb-0 fs-6">Engineering consultants may provide inclusive engineering services but there are consultants which are specialized in specific engineering areas for instance structural, geotechnical, and environmental. Generally, the necessity for engineering services is based on the nature of the project and capability of the owner. Engineering services provided by consultant add value to the project and improve its quality. Added to that, it is considerably significant that the owner clearly understands type of services that may be provided to be able to develop scope of services that serve the project properly. 
+                    </p>
+                  </div>
+                </div>
+                            <!-- icon with para -->
+                <div class="d-flex mb-4">
+                  <div>
+                    
+                  </div>
+      <!-- content -->
+                  <div class="ms-3">
+                    <p class="mb-0 fs-6">It includes the preparation of land development plans, urban plans, regional plans, generating facility master plans, carry out corridor studies, exploring environmental condition, and conducting environmental studies. These various planning and reports need cooperation between different engineering specialist to provide satisfactory consultations
+                    </p>
+                  </div>
+                </div>
+                            <!-- icon with para -->
+                <div class="d-flex ">
+                  <div>   
+                  </div>
+      <!-- content -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-10  col-md-12 col-12 mt-5" data-aos="fade-left">
+            <form class="p-5 py-5  p-md-5 border rounded-3 bg-white w-100">
+              <div class="form-floating mb-3">
+                <input type="name" class="form-control" id="floatingInput" placeholder="Name">
+                <label for="floatingInput">NAME</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="tel" id="phone" name="phone" class="form-control" id="floatingphone" placeholder="Phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" >
+                <label for="floatinginput" >PHONE</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+      <label for="floatingTextarea">Leave a Message</label>
+              </div>
+      
+              <button class="w-100 btn btn-lg btn-info" type="submit">Sign up</button>
+              <hr class="my-4">
+              <small class="text-white">By clicking Sign up, you agree to the terms of use.</small>
+            </form>
+             <div class="mt-4 mt-lg-0">
+
+             </div>
+           </div>
+         </div>
+                            </div>
+                          </div>
+
+
+                          <div class="container">
+                            <h6 class="display-6 fs-2 text-center text-dark">Construction Project Management Consultancy</h6>
+                            <div class="col-lg-12">
+                              <p class="mb-4 text-center text-dark">Do you have a construction project you�re trying to achieve, but don�t know where to begin? Let us guide you from start to finish with our project management consultancy. Some of the most common things that we encounter in our consultancy service are:</p>
+                              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                                <div class="row row-cols-1 row-cols-md-3 g-4">
+                                  <div class="col">
+                                    <div class="card h-100 border-0">
+                                      <img src="/Img/Consultaion-1.jpg" class="card-img-top rounded-0 h-50" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Preliminary study</h5>
+                                        <p class="card-text text-white">Preliminary survey includes gathering geospatial data about the proposed route and the project requirements for data outputs. This includes the establishment on the ground of the proposed route and location of terrain and physical features (both man made and environmental).</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="card h-100 border-0">
+                                      <img src="/Img/Consultaion-2.jpg" class="card-img-top rounded-0 h-50" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Design consultation</h5>
+                                        <p class="card-Title text-white">To kick start your home improvement project, we�ll get together with you for an architect�s design consultation. This is where your ideas start to come to life. It�s a thorough process where we learn more about your property and help you explore what you want to gain from your home improvement. </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="card h-100 border-0">
+                                      <img src="/Img/Consultaion-3.jpg" class="card-img-top rounded-0 h-50" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Budget surveying and management</h5>
+                                        <p class="card-text text-white">Budgeting is one of the most integral initial steps for contractors undertaking construction projects. It's not just a "cost plan" - your estimate affects a number of key outcomes that rely on the overall success of the venture.</p>
+                                      </div>
+                                    </div>
+                                  </div> 
+                                </div>                          
+                              </div>
+                            </div>
+                          </div>
+
+
+<div class="container">
+  <div class="col-md-12 text-center">
+    <div class="lc-block mb-4">
+      <h1 class="display-6 fw-bold"><span class="text-info">Our</span> Dependable Team</h1>
+    </div>
+  </div>
+
+    <div class="row text-center">
+      <!-- Team item-->
+      <div class="col-xl-4 col-sm-6 mb-5" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+        <div class="bg-white rounded shadow py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Roxanne Lutap</h5><span class="small text-uppercase text-white">Head - Accounting Department</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="#" class="social-link link-info fs-4"><i class="fa fa-facebook-f" ></i></a></li>
+            <li class="list-inline-item"><a href="mailto: rjlutap.428htgi@gmail.com" class="social-link link-info fs-4"><i class="fa-solid fa-envelopes-bulk"></i></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link link-info fs-4"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link link-info fs-4"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 mb-5" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
+        <div class="bg-white rounded shadow py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-3.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Myraflor gonzalez</h5><span class="small text-uppercase text-white">Finance manager</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="#" class="social-link link-info fs-4"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="mailto:Myragonzalez01@gmail.com" class="social-link link-info fs-4"><i class="fa-solid fa-envelopes-bulk"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link link-info fs-4"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link link-info fs-4"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 mb-5" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"  data-aos-duration="1300">
+        <div class="bg-white rounded shadow py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-2.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Jertrudes bantigue</h5><span class="small text-uppercase text-white">Human Resource Manager</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="#" class="social-link link-info fs-4"><i class="fa fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="mailto: Jert428htgi@gmail.com " class="social-link link-info fs-4"><i class="fa-solid fa-envelopes-bulk"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link link-info fs-4"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link link-info fs-4"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </section>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <div class="b-example-divider"></div>
+
+  <div class="px-4 py-5 text-center"  style="background: linear-gradient(rgba(161, 161, 161, 0.7),rgba(0,0,0,0.7)), url(/Img/COA.jpg);
+  background-size: cover;   ">
+    <div class="container">
+      <img class="d-block mx-auto mb-4" src="/Img/plogo.png" alt="" width="72" height="57">
+      <h6 class="display-6 text-light">Set your project up for success by hiring RMJE Construction Services
+        Corporation as your design and construction project managers.</h6>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4 text-light">Ready to build your project? Let�s talk about your plans.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-light bg-transparent text-white animate__animated animate__fadeInRight animate__delay0.5s my-3 fw-bold display-4 fs-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <a href="#" class="text-white text-decoration-none link-info fs-5">REQUEST AN APPOITNMENT</a>
+          </button>
+      
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-info">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class=" pt-5  pb-5 bg-info">
+    <div class="container">
+      <footer class="">
+        <ul class="nav justify-content-center border-bottom">
+          <li class="nav-item"><a href="/Main-index.html" class="nav-link link-info  text-white">Home</a></li>
+          <li class="nav-item"><a href="/Aboutus.html" class="nav-link link-info text-white">About Us</a></li>
+          <li class="nav-item"><a href="/Services.html" class="nav-link link-info  text-white">Services</a></li>
+          <li class="nav-item"><a href="/Projects.html" class="nav-link link-info text-white">Projects</a></li>
+          <li class="nav-item"><a href="/Contact Us.html" class="nav-link link-info text-white">Contact Us</a></li>
+        </ul>
+        <p class="text-center text-white p-0 m-0 pt-2">� 2022 428-HI-TECH. Inc</p>
+      </footer>
+    </div>
+  </div>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/ede971585b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/ede971585b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    
+  
+    <script src="/myscripts.js"></script>  
+    
+</body>
+</html>

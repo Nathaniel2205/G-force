@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!---Bootstap Links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+
+    <link rel="stylesheet" href="Main_style.css">
+    </head>
+<script src="https://kit.fontawesome.com/ede971585b.js" crossorigin="anonymous"></script>
+<style>
+  html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    }
+</style>
+  <body>
+    <header class="py-2 border-bottom border-success border-opacity-10 bg-info">
+      <div class="container d-flex d-md-blockflex-wrap justify-content-center">
+        <a href="#" class="d-none d-md-block d-flex align-items-center mt-2 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+          <i class="bi bi-telephone-forward-fill text-dark mx-2"> 09983336584</i>
+          <div class="vr text-white"></div>
+          <i class="bi bi-envelope-fill text-dark mx-2"> 428hitechgroupinc@gmail.com</strong> </i>
+          <div class="vr text-white"></div>
+          <i class="bi bi-calendar-check-fill text-dark mx-2">  Monday - Sunday 9.00 - 18.00</strong></i>
+
+        </a>
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-tansparent border-white text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <strong>REQUEST AN APPOINTMENT</strong>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal modal-signin position-static d-block bg-info py-5" tabindex="-1" role="dialog" id="modalSignin">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header p-5 pb-4 border-bottom-0">
+          <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+          <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
+          <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            
+          </button>
+         </div>
+  
+        <div class="modal-body p-5 pt-0">
+          <form class="row g-3">
+            <div class="col-md-12">
+              <div class="form-floating mb-3">
+                <input type="name" class="form-control" id="floatingInput" placeholder="Name">
+                <label for="floatingInput">NAME</label>
+              </div>
+              
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating">
+                <input type="email4" class="form-control" id="floatingemail4" placeholder="Email">
+                <label for="floatingemail4">EMAIL</label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-floating">
+              <input type="tel" id="phone" name="phone" class="form-control" id="floatingphone" placeholder="Phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" >
+              <label for="floatinginput" >PHONE</label>
+            </div>
+            </div>
+            <div class="col-6">
+              <div class="form-floating">
+                <input type="text" id="datepicker" name="date" class="form-control" id="floatingdate" placeholder="DATE" >
+                <label for="floatinginput" >DATE</label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class=" form-floating">
+                <input type="time" id="floatingtime" class="form-control" placeholder="TIME" />
+                <label for="floatingtime">TIME</label>
+              </div>
+             </div>
+             <div class="col-12">
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Comments</label>
+              </div>
+             </div>
+             <div class="file-upload-wrapper">
+              <input type="file" id="input-file-now-custom-2" class="file-upload"
+             data-height="500" />
+           </div>
+           
+            <div class="col-12">
+              <button type="submit" class="btn btn-infolink-info">Sign in</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </header>
+      <nav class="navbar navbar-expand-lg py-2 bg-light">
+        <div class="container d-flex flex-wrap text-success">
+            <a href="/" class="navbar-brand d-flex align-items-center mb-1 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+                <img src="/Img/plogo.png" alt="Logo" width="50" height="60" class="d-inline-block align-text-top mx-2">
+                
+                <span class="fs-4 mx-2 text-dark fw-bold " >428-HI-TECH</Strong></span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mt-2"><a href="/Main-index.html" class="nav-link link-info px-2  text-dark" aria-current="page">HOME</a></strong></li>
+            
+            <li class="nav-item mt-2"><a href="/Aboutus.html" class="nav-link link-info px-2 text-infolink-info">ABOUT US</a></Strong></li>
+            
+            <li class="nav-item mt-2"><a href="/Projects.html" class="nav-link link-info px-2 text-dark">PROJECTS</a></Strong></li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mt-2 link-info px-2 text-dark"  href="/Services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                SERVICES</strong>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/Services.html">BUILD</a></li>
+                <li><a class="dropdown-item" href="/Consultation.html">CONSULTATION</a></li>
+                <li><a class="dropdown-item" href="/Design.html">DESIGN</a></li>
+              </ul>
+            </li>
+            
+            <li class="nav-item mt-2"><a href="/Contact Us.html" class="nav-link link-info px-2 text-dark">CONTACT US</a></Strong></li>
+
+          </ul>
+        </div>
+      </div>
+      </nav>
+
+      <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/Img/Breadcrumb-1.jpg');">
+        <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+          <h2 class="fw-bolder"><span class="text-infolink-info">ABOUT</span> US</h2>
+          <ol>
+            <li><a href="Main-index.html" class="text-decoration-none ">Home</a></li>
+            <li class="text-info">About</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="py-8">
+        <div class="container mt-5 pb-5 mb-5" >
+         <div class="row align-items-center">
+           <!-- col -->
+           <div class="col-lg-6 col-md-12 col-12"  data-aos="fade-right">
+             <!-- content -->
+            <div class="pe-lg-6 ps-lg-6" >
+              <span class="text-infolink-info ls-md text-uppercase
+                fw-semi-bold">
+              </span>
+              <h2 class="display-5 mt-4 mb-3 fw-bold" >About 428-HI-TECH</h2>
+             
+              <div class="mt-6">
+                 <!-- icon with para -->
+                <div class="d-flex mb-4">
+                  
+                  <div class="ms-3">
+                     <!-- content -->
+                    
+                    <p class="mb-0 fs-5">428 HI-TECH Group Incorporated is a General Contractor that was founded in 2016 by its President, Karla Mercado.
+                    </p>
+                  </div>
+                </div>
+                            <!-- icon with para -->
+                <div class="d-flex mb-4">
+                  <div>
+                    
+                  </div>
+      <!-- content -->
+                  <div class="ms-3">
+                    <p class="mb-0 fs-5 text-black">It's main office is located in Makati city and they have a branch in Coron, Palawan. The main commitment of the company is to provide quality infrastructure and client engage projects. As an industry that offers Design-Build construction, 428 Hi-Tech Group Incorporated provides a full spectrum of pre-construction, program management, design development, construction, interior design management, inspection, and quality control services.
+                    </p>
+                  </div>
+                </div>
+                            <!-- icon with para -->
+                <div class="d-flex ">
+                  <div>   
+                  </div>
+      <!-- content -->
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="col-lg-6 col-sm-4 col-md-12 col-12" data-aos="fade-left">
+            <iframe class="col-lg-12 col-sm-6 " width="577" height="565" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=577&amp;height=565&amp;hl=en&amp;q=23%20W%20Rembo%20Ave,%20Makati,%20Metro%20Manila%20Makati+(428%20Hi-Tech%20Group%20Inc.)&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'></a>
+             <div class="mt-4 mt-lg-0">
+             </div>
+           </div>
+         </div>
+          </div>
+          </div>
+
+ 
+  
+<section class="section-bg">
+  
+  <div class="container">
+    <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="mx-auto text-center">
+                <img src="/Img/contructionghover.png" class="rounded" alt="..." data-aos="fade-right">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="ps-lg-6 ps-xl-10 w-lg-90 ">
+                <div class="mb-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="3rem" fill="currentColor" class="bi bi-slash link-info" viewBox="0 0 16 16">
+                    <path d="M11.354 4.646a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="3rem" fill="currentColor" class="bi bi-slash link-info" viewBox="0 0 16 16">
+                    <path d="M11.354 4.646a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                  </svg>
+                    
+                </div>
+                <h1 class="mb-4 fw-bold">
+                  KEY POINTS ABOUT COMPANY
+                </h1>
+
+
+
+                <div id="accordion" class="accordion-style pb-5 mb-5">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Embracing Technology</button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                            <div class="card-body position-relative">In this era of technology, it is imperative that as a company you are open to finding ways to use it effectively. Choosing to use technology in your construction business
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Good Management</button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                            <div class="card-body position-relative">
+                              One of the most important things that every business needs, is good management. Seeing as construction projects can be both multi-layered and complex
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Long term Partnership</button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                            <div class="card-body position-relative">
+                              To reach success in construction faster, you should figure out which work gives you the most return on your hard work. 
+                            </div>
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="counter" class="sec-padding" style="text-align: center;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 ">
+        <div class="count1"> <span class="fa fa-smile-o"></span>
+          <p class="number">126</p>
+          <h4>Happy Clients</h4> </div>
+      </div>
+      <div class="col-md-3 ">
+        <div class="count2"> <span class="fa fa-smile-o"></span>
+          <p class="number">535</p>
+          <h4>Awards</h4> </div>
+      </div>
+      <div class="col-md-3 ">
+        <div class="count3"> <span class="fa fa-smile-o"></span>
+          <p class="number">896</p>
+          <h4>Total Hours</h4> </div>
+      </div>
+      <div class="col-md-3 ">
+        <div class="count4"> <span class="fa fa-smile-o"></span>
+          <p class="number">777</p>
+          <h4>Projects Complete</h4> </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <div class="bg-light py-5">
+    <div class="container py-5 text-center">
+      <div class="row align-items-center mb-5" >
+        <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-right" data-aos-duration="1000">
+          <h2 class="font-weight-light link-info text-dark">Safety Program</h2>
+          <p class="font-italic  mb-4">The main goal of safety and health programs is to prevent workplace injuries, illnesses, and deaths, as well as the suffering and financial hardship these events can cause for workers, their families, and employers.</p>
+        </div>
+        <div class="col-lg-6 px-5 mx-auto order-1 order-lg-2" data-aos="fade-left" data-aos-duration="1000"><img src="/Img/Section-2.jpg" alt="" class="img-fluid w-100 mb-4 mb-lg-0"></div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 px-5 mx-auto" data-aos="fade-right" data-aos-duration="1200"><img src="/Img/Section-1.jpg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+        <div class="col-lg-5" data-aos="fade-left" data-aos-duration="1200">
+          <h2 class="font-weight-light link-info text-dark">Diversity and Equal Opportunity</h2>
+          <p class="font-italic mb-4">Equality in the workplace means equal job opportunities and fairness for employees and job applicants. You must not treat people unfairly because of reasons protected by discrimination law ('protected characteristics'). For example, because of a person's sex, age or race.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div class="container pt-4 mt-5">
+  <div class="col-md-12 text-center">
+    <div class="lc-block mb-4">
+      <h1 class="display-6 fw-bold"><span class="text-infolink-info">Our</span> Dependable Team</h1>
+    </div><!-- /lc-block -->
+  </div>
+  
+  
+  
+  
+    <div class="row text-center">
+      <!-- Team item-->
+      <div class="col-xl-4 col-sm-6 mb-5" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+        <div class="bg-white rounded shadow py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Roxanne Lutap</h5><span class="small text-uppercase text-white">Head - Accounting Department</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="#" class="social-link link-info fs-4"><i class="fa fa-facebook-f" ></i></a></li>
+            <li class="list-inline-item"><a href="mailto: rjlutap.428htgi@gmail.com" class="social-link link-info fs-4"><i class="fa-solid fa-envelopes-bulk"></i></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link link-info fs-4"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link link-info fs-4"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End-->
+  
+      <!-- Team item-->
+      <div class="col-xl-4 col-sm-6 mb-5" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom" data-aos-duration="1200">
+        <div class="bg-white rounded shadow py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-3.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Myraflor gonzalez</h5><span class="small text-uppercase text-white">Finance manager</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="#" class="social-link link-info fs-4"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="mailto:Myragonzalez01@gmail.com" class="social-link link-info fs-4"><i class="fa-solid fa-envelopes-bulk"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link link-info fs-4"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link link-info fs-4"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End-->
+  
+      <!-- Team item-->
+      <div class="col-xl-4 col-sm-6 mb-5" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"  data-aos-duration="1300">
+        <div class="bg-white rounded shadow py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-2.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Jertrudes bantigue</h5><span class="small text-uppercase text-white">Human Resource Manager</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="#" class="social-link link-info fs-4"><i class="fa fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="mailto: Jert428htgi@gmail.com " class="social-link link-info fs-4"><i class="fa-solid fa-envelopes-bulk"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link link-info fs-4"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link link-info fs-4"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End-->
+  
+      <!-- Team item-->
+  
+      </div>
+    </section>
+</div>
+      <!-- End-->
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="px-4 py-5 text-center"  style="background: linear-gradient(rgba(202, 200, 200, 0.7),rgba(0,0,0,0.7)), url(/Img/COA.jpg);
+background-size: cover;   ">
+  <div class="container">
+    <img class="d-block mx-auto mb-4" src="/Img/plogo.png" alt="" width="72" height="57">
+    <h6 class="display-6 text-light">Set your project up for success by hiring RMJE Construction Services
+      Corporation as your design and construction project managers.</h6>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4 text-light">Ready to build your project? Let�s talk about your plans.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-light bg-transparent text-white animate__animated animate__fadeInRight animate__delay0.5s my-3 fw-bold display-4 fs-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <a href="#" class="text-white text-decoration-none link-info fs-5">REQUEST AN APPOITNMENT</a>
+        </button>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-infolink-info">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class="bg-info pt-5  pb-5">
+  <div class="container">
+    <footer class="">
+      <ul class="nav justify-content-center border-bottom">
+        <li class="nav-item"><a href="/Main-index.html" class="nav-link link-info  text-white">Home</a></li>
+        <li class="nav-item"><a href="/Aboutus.html" class="nav-link link-info text-white">About Us</a></li>
+        <li class="nav-item"><a href="/Services.html" class="nav-link link-info  text-white">Services</a></li>
+        <li class="nav-item"><a href="/Projects.html" class="nav-link link-info text-white">Projects</a></li>
+        <li class="nav-item"><a href="/Contact Us.html" class="nav-link link-info text-white">Contact Us</a></li>
+      </ul>
+      <p class="text-center text-white p-0 m-0 pt-2">� 2022 428-HI-TECH. Inc</p>
+    </footer>
+  </div>
+</div>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://kit.fontawesome.com/ede971585b.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    
+
+
+    <script src="/myscripts.js"></script>  
+    
+</body>
+</html>
